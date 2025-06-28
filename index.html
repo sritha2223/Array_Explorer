@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Array Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>JavaScript Array Explorer</h1>
+
+  <!-- Input for array values -->
+  <input type="text" id="arrayInput" placeholder="Enter numbers separated by commas" />
+
+  <!-- Button Grid -->
+  <div class="grid-button-container">
+    <button onclick="sortArray()">Sort</button>
+    <button onclick="findReverse()">Reverse</button>
+    <button onclick="findEven()">Find Evens</button>
+    <button onclick="findOdd()">Find Odds</button>
+    <button onclick="findMax()">Find Max</button>
+    <button onclick="findMin()">Find Min</button>
+    <button onclick="findSum()">Sum</button>
+    <button onclick="findAverage()">Average</button>
+    <button onclick="findDuplicates()">Find Duplicates</button>
+    <button onclick="removeDuplicates()">Remove Duplicates</button>
+    <button onclick="findPrimes()">Find Primes</button>
+    <button onclick="findMedian()">Find Median</button>
+    <button onclick="findMode()">Find Mode</button>
+    <button onclick="findSquareNumbers()">Square Numbers</button>
+    <button onclick="findFactorial()">Factorial</button>
+  </div>
+
+  <!-- Filter Input and Button -->
+  <div class="filter-group">
+    <input type="number" id="filterInput" placeholder="Filter > Value" />
+    <button onclick="filterGreater()">Filter</button>
+  </div>
+
+  <!-- Result Output -->
+  <div class="result" id="result"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
