@@ -87,9 +87,15 @@ function findPrimes() {
         }
         return true;
     }
+    // Filter primes
     let primes = numbers.filter(isPrime);
-    displayResult("Primes: " + primes.join(", "));
+
+    // Remove duplicates
+    let uniquePrimes = [...new Set(primes)];
+
+    displayResult("Primes: " + uniquePrimes.join(", "));
 }
+
 
 function findMedian() {
     let arr = getArray().sort((a, b) => a - b);
